@@ -1,0 +1,345 @@
+/* =========================
+   ROOT VARIABLES (THEME)
+========================= */
+
+:root {
+    --bg: #f5f7ff;;
+    --bg-light: #0b0f1a;
+    --text: #0b0f1a;
+    --text-dark: #0b0f1a;
+
+    --primary: #6c5ce7;
+    --secondary: #00d2d3;
+    --accent: #ffb142;
+
+    --card: rgba(255, 255, 255, 0.05);
+    --border: rgba(255, 255, 255, 0.1);
+
+    --radius: 14px;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    --font-title: "Space Grotesk", sans-serif;
+    --font-body: "Inter", sans-serif;
+}
+
+/* compte a rebour */
+.time-box{
+    background: var(--card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: 0.3s; 
+    background-color: #0b0f1a;        
+     
+
+}
+
+
+
+
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    transition: 0.3s ease;
+   
+}
+
+/* =========================
+   GLOBAL
+========================= */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: transparent;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background: var(--bg);
+    box-shadow: var(--shadow);
+}
+
+.logo {
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--secondary);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("../images/index2.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    padding: 12px 20px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    border: 1px solid var(--border);
+}
+
+/* =========================
+   STATS (GRID)
+========================= */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat-card {
+    background: var(--card);
+    padding: 30px;
+    text-align: center;
+    border-radius: var(--radius);
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+/* =========================
+   WHY (FLEXBOX)
+========================= */
+
+.why-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.why-card {
+    flex: 1;
+    padding: 20px;
+    background: var(--card);
+    border-radius: var(--radius);
+}
+
+/* =========================
+   SPEAKERS GRID
+========================= */
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.speaker-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.speaker-card:hover {
+    transform: translateY(-8px);
+}
+
+.speaker-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* =========================
+   SPONSORS
+========================= */
+
+.sponsor-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.sponsor {
+    padding: 15px 25px;
+    background: var(--card);
+    border-radius: var(--radius);
+}
+
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-container {
+    display: flex;
+    gap: 40px;
+}
+
+.form-grid {
+    display: flex;
+    gap: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+}
+
+/* =========================
+   FAQ (CSS ONLY)
+========================= */
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-item input {
+    display: none;
+}
+
+.faq-item label {
+    display: block;
+    padding: 15px;
+    background: var(--card);
+    cursor: pointer;
+}
+
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    padding: 0 15px;
+}
+
+.faq-item input:checked ~ .faq-content {
+    max-height: 200px;
+    padding: 15px;
+}
+
+/* =========================
+   MAP
+========================= */
+
+.map iframe {
+    width: 100%;
+}
+
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
