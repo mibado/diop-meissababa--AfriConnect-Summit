@@ -22,6 +22,7 @@
     --font-body: "Inter", sans-serif;
 }
 
+
 /* compte a rebour */
 .time-box{
     background: var(--card);
@@ -258,7 +259,29 @@ body {
     border-radius: var(--radius);
 }
 
+/* =========================
+   FOOTER
+========================= */
 
+footer {
+    padding: 60px 0 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+}
 
 /* =========================
    FORM
@@ -326,7 +349,22 @@ input, select, textarea {
     width: 100%;
 }
 
+/* =========================
+   BACK TO TOP
+========================= */
 
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px;
+    border-radius: 50%;
+    border: none;
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
+    display: none;
+}
 
 /* =========================
    ANIMATIONS
