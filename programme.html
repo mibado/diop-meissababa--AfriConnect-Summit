@@ -86,340 +86,359 @@
 
         </section>
 
-        <!-- ================= ONGLETS ================= -->
+      
 
-        <section class="section-padding">
 
-            <div class="container">
+        <!-- ONGLET JOUR -->
 
-                <div class="tabs">
+        <div class="tabs">
 
-                    <button class="tab-btn active" data-day="day1">
-                        Jour 1
-                    </button>
+            <button class="tab-btn active" data-day="day1">
+                <i class="bi bi-calendar-event"></i>
+                Jour 1
+            </button>
 
-                    <button class="tab-btn" data-day="day2">
-                        Jour 2
-                    </button>
+            <button class="tab-btn" data-day="day2">
+                <i class="bi bi-calendar-event"></i>
+                Jour 2
+            </button>
 
-                    <button class="tab-btn" data-day="day3">
-                        Jour 3
-                    </button>
+            <button class="tab-btn" data-day="day3">
+                <i class="bi bi-calendar-event"></i>
+                Jour 3
+            </button>
 
-                </div>
+        </div>
 
-                <!-- JOUR 1 -->
 
-                <div id="day1" class="tab-content active">
 
-                    <table>
+        <!-- JOUR 1 -->
 
-                        <thead>
+        <div id="day1" class="tab-content active">
 
-                            <tr>
+            <div class="schedule-grid">
 
-                                <th>Heure</th>
 
-                                <th>Session</th>
+                <article class="schedule-card">
 
-                                <th>Intervenant</th>
+                    <span>09:00</span>
 
-                                <th>Salle</th>
+                    <div>
+                        <h3>Ouverture officielle</h3>
+                        <p>Comité d'organisation</p>
+                    </div>
 
-                            </tr>
+                    <strong>
+                        Grande Salle
+                    </strong>
 
-                        </thead>
+                </article>
 
-                        <tbody>
 
-                            <tr>
 
-                                <td>09:00</td>
+                <article class="schedule-card">
 
-                                <td>Ouverture officielle</td>
+                    <span>10:00</span>
 
-                                <td>Comité d'organisation</td>
-
-                                <td>Grande Salle</td>
-
-                            </tr>
-
-                            <tr>
-
-                                <td>10:00</td>
-
-                                <td>Intelligence Artificielle</td>
-
-                                <td>Amina Diallo</td>
-
-                                <td>Salle A</td>
-
-                            </tr>
-
-                            <tr>
-
-                                <td>11:30</td>
-
-                                <td>Cloud Computing</td>
-
-                                <td>Jean Bemba</td>
-
-                                <td>Salle B</td>
-
-                            </tr>
-
-                            <tr>
-
-                                <td>14:00</td>
-
-                                <td>Startup Pitch</td>
-
-                                <td>David Mensah</td>
-
-                                <td>Salle C</td>
-
-                            </tr>
-
-                            <tr>
-
-                                <td>16:00</td>
-
-                                <td>Networking</td>
-
-                                <td>Tous</td>
-
-                                <td>Hall</td>
-
-                            </tr>
-
-                        </tbody>
-
-                    </table>
-
-                </div>
-
-                <!-- JOUR 2 -->
-
-                <div id="day2" class="tab-content">
-
-                    <table>
-
-                        <thead>
-
-                            <tr>
-
-                                <th>Heure</th>
-
-                                <th>Session</th>
-
-                                <th>Intervenant</th>
-
-                                <th>Salle</th>
-
-                            </tr>
-
-                        </thead>
-
-                        <tbody>
-
-                            <tr>
-
-                                <td>09:00</td>
-
-                                <td>Cybersécurité</td>
-
-                                <td>Fatou Ndiaye</td>
-
-                                <td>Salle A</td>
-
-                            </tr>
-
-                            <tr>
-
-                                <td>10:30</td>
-
-                                <td>UX/UI Design</td>
-
-                                <td>Sarah Kamau</td>
-
-                                <td>Salle B</td>
-
-                            </tr>
-
-                            <tr>
-
-                                <td>12:00</td>
-
-                                <td>Big Data</td>
-
-                                <td>Kevin Okoro</td>
-
-                                <td>Salle C</td>
-
-                            </tr>
-
-                            <tr>
-
-                                <td>14:00</td>
-
-                                <td>FinTech</td>
-
-                                <td>David Mensah</td>
-
-                                <td>Grande Salle</td>
-
-                            </tr>
-
-                            <tr>
-
-                                <td>16:30</td>
-
-                                <td>Table ronde</td>
-
-                                <td>Invités</td>
-
-                                <td>Hall</td>
-
-                            </tr>
-
-                        </tbody>
-
-                    </table>
-
-                </div>
-                                <!-- JOUR 3 -->
-
-                <div id="day3" class="tab-content">
-
-                    <table>
-
-                        <thead>
-                            <tr>
-                                <th>Heure</th>
-                                <th>Session</th>
-                                <th>Intervenant</th>
-                                <th>Salle</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-
-                            <tr>
-                                <td>09:00</td>
-                                <td>Innovation en Afrique</td>
-                                <td>Panel Experts</td>
-                                <td>Grande Salle</td>
-                            </tr>
-
-                            <tr>
-                                <td>10:30</td>
-                                <td>Investissement Tech</td>
-                                <td>Marie Koulibaly</td>
-                                <td>Salle A</td>
-                            </tr>
-
-                            <tr>
-                                <td>12:00</td>
-                                <td>Blockchain & Web3</td>
-                                <td>El Hadji Sarr</td>
-                                <td>Salle B</td>
-                            </tr>
-
-                            <tr>
-                                <td>14:00</td>
-                                <td>Startup Showcase</td>
-                                <td>Entrepreneurs</td>
-                                <td>Salle C</td>
-                            </tr>
-
-                            <tr>
-                                <td>16:00</td>
-                                <td>Clôture & Awards</td>
-                                <td>Organisation</td>
-                                <td>Grande Salle</td>
-                            </tr>
-
-                        </tbody>
-
-                    </table>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- ================= THÉMATIQUES ================= -->
-
-        <section class="section-padding themes">
-
-            <div class="container">
-
-                <div class="section-title">
-
-                    <h2>Thématiques</h2>
-
-                    <p>
-                        Les grands axes qui structurent AfriConnect Summit 2026.
-                    </p>
-
-                </div>
-
-                <div class="themes-grid">
-
-                    <article class="theme-card reveal">
-
-                        <i class="bi bi-cpu-fill"></i>
-
+                    <div>
                         <h3>Intelligence Artificielle</h3>
+                        <p>Amina Diallo</p>
+                    </div>
 
-                        <p>
-                            IA, machine learning et automatisation intelligente.
-                        </p>
+                    <strong>
+                        Salle A
+                    </strong>
 
-                    </article>
+                </article>
 
-                    <article class="theme-card reveal">
 
-                        <i class="bi bi-graph-up-arrow"></i>
 
-                        <h3>Business & Startup</h3>
+                <article class="schedule-card">
 
-                        <p>
-                            Croissance, investissement et entrepreneuriat.
-                        </p>
+                    <span>11:30</span>
 
-                    </article>
+                    <div>
+                        <h3>Cloud Computing</h3>
+                        <p>Jean Bemba</p>
+                    </div>
 
-                    <article class="theme-card reveal">
+                    <strong>
+                        Salle B
+                    </strong>
 
-                        <i class="bi bi-palette-fill"></i>
+                </article>
 
-                        <h3>Design & UX</h3>
 
-                        <p>
-                            Expérience utilisateur et design digital moderne.
-                        </p>
 
-                    </article>
+                <article class="schedule-card">
 
-                    <article class="theme-card reveal">
+                    <span>14:00</span>
 
-                        <i class="bi bi-database-fill"></i>
+                    <div>
+                        <h3>Startup Pitch</h3>
+                        <p>David Mensah</p>
+                    </div>
 
-                        <h3>Data & Cloud</h3>
+                    <strong>
+                        Salle C
+                    </strong>
 
-                        <p>
-                            Big data, cloud computing et infrastructure.
-                        </p>
+                </article>
 
-                    </article>
 
-                </div>
+
+                <article class="schedule-card">
+
+                    <span>16:00</span>
+
+                    <div>
+                        <h3>Networking</h3>
+                        <p>Tous les participants</p>
+                    </div>
+
+                    <strong>
+                        Hall
+                    </strong>
+
+                </article>
+
 
             </div>
 
-        </section>
+        </div>
+
+
+
+        <!-- JOUR 2 -->
+
+        <div id="day2" class="tab-content">
+
+
+            <div class="schedule-grid">
+
+
+                <article class="schedule-card">
+
+                    <span>09:00</span>
+
+                    <div>
+                        <h3>Cybersécurité</h3>
+                        <p>Fatou Ndiaye</p>
+                    </div>
+
+                    <strong>Salle A</strong>
+
+                </article>
+
+
+
+                <article class="schedule-card">
+
+                    <span>10:30</span>
+
+                    <div>
+                        <h3>UX/UI Design</h3>
+                        <p>Sarah Kamau</p>
+                    </div>
+
+                    <strong>Salle B</strong>
+
+                </article>
+
+
+
+                <article class="schedule-card">
+
+                    <span>12:00</span>
+
+                    <div>
+                        <h3>Big Data</h3>
+                        <p>Kevin Okoro</p>
+                    </div>
+
+                    <strong>Salle C</strong>
+
+                </article>
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- JOUR 3 -->
+
+        <div id="day3" class="tab-content">
+
+
+            <div class="schedule-grid">
+
+
+                <article class="schedule-card">
+
+                    <span>09:00</span>
+
+                    <div>
+                        <h3>Innovation en Afrique</h3>
+                        <p>Panel Experts</p>
+                    </div>
+
+                    <strong>Grande Salle</strong>
+
+                </article>
+
+
+
+                <article class="schedule-card">
+
+                    <span>14:00</span>
+
+                    <div>
+                        <h3>Startup Showcase</h3>
+                        <p>Entrepreneurs</p>
+                    </div>
+
+                    <strong>Salle C</strong>
+
+                </article>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+<!-- ================= THEMATIQUES ================= -->
+
+
+<section class="section-padding themes">
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+Les grandes thématiques
+</h2>
+
+
+<p>
+Les domaines clés qui façonnent l'avenir numérique africain.
+</p>
+
+
+</div>
+
+
+
+
+<div class="themes-grid">
+
+
+<article class="theme-card reveal">
+
+
+<i class="bi bi-cpu-fill"></i>
+
+
+<h3>
+Intelligence Artificielle
+</h3>
+
+
+<p>
+IA, automatisation et nouvelles technologies.
+</p>
+
+
+</article>
+
+
+
+<article class="theme-card reveal">
+
+
+<i class="bi bi-rocket-takeoff-fill"></i>
+
+
+<h3>
+Startup & Innovation
+</h3>
+
+
+<p>
+Entrepreneuriat, financement et croissance.
+</p>
+
+
+</article>
+
+
+
+
+<article class="theme-card reveal">
+
+
+<i class="bi bi-palette-fill"></i>
+
+
+<h3>
+Design UX/UI
+</h3>
+
+
+<p>
+Créer des expériences numériques modernes.
+</p>
+
+
+</article>
+
+
+
+
+<article class="theme-card reveal">
+
+
+<i class="bi bi-cloud-fill"></i>
+
+
+<h3>
+Data & Cloud
+</h3>
+
+
+<p>
+Infrastructure digitale et intelligence des données.
+</p>
+
+
+</article>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
 
         <!-- ================= FOOTER ================= -->
 

@@ -113,3 +113,187 @@ backToTop.addEventListener("click", () => {
 
 });
 
+// =========================
+// FORMULAIRE CONTACT
+// =========================
+
+const form = document.getElementById("contactForm");
+
+if(form){
+
+    form.addEventListener("submit", function(e){
+
+        e.preventDefault();
+
+
+        // Récupération des valeurs
+
+        const name = document.getElementById("name");
+        const email = document.getElementById("email");
+        const phone = document.getElementById("phone");
+        const type = document.getElementById("type");
+        const country = document.getElementById("country");
+        const message = document.getElementById("message");
+
+
+        let isValid = true;
+
+
+
+        // Fonction erreur
+
+        function showError(input, text){
+
+            const error = input.parentElement.querySelector(".error");
+
+            error.textContent = text;
+
+            input.style.border = "1px solid red";
+
+            isValid = false;
+
+        }
+
+
+
+        // Fonction supprimer erreur
+
+        function removeError(input){
+
+            const error = input.parentElement.querySelector(".error");
+
+            if(error){
+
+                error.textContent = "";
+
+            }
+
+            input.style.border = "1px solid transparent";
+
+        }
+
+
+
+        // Vérification nom
+
+        if(name.value.trim() === ""){
+
+            showError(name,"Veuillez entrer votre nom.");
+
+        }else{
+
+            removeError(name);
+
+        }
+
+
+
+        // Vérification email
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+        if(email.value.trim()===""){
+
+            showError(email,"Veuillez entrer votre email.");
+
+        }
+
+        else if(!emailRegex.test(email.value)){
+
+            showError(email,"Email invalide.");
+
+        }
+
+        else{
+
+            removeError(email);
+
+        }
+
+
+
+
+        // Téléphone
+
+        if(phone.value.trim()===""){
+
+            showError(phone,"Veuillez entrer votre téléphone.");
+
+        }
+
+        else if(phone.value.length < 8){
+
+            showError(phone,"Numéro trop court.");
+
+        }
+
+        else{
+
+            removeError(phone);
+
+        }
+
+
+
+
+
+        // Message
+
+        if(message.value.trim()===""){
+
+            showError(message,"Veuillez écrire un message.");
+
+        }
+
+        else{
+
+            removeError(message);
+
+        }
+
+
+
+
+
+        // Validation finale
+
+        if(isValid){
+
+
+            const success = document.getElementById("successMsg");
+
+
+            success.textContent =
+            "✅ Votre inscription a été envoyée avec succès !";
+
+
+            success.style.color = "green";
+
+            success.style.fontWeight = "bold";
+
+
+
+            // vider formulaire
+
+            form.reset();
+
+
+
+            // disparition message après 5 secondes
+
+            setTimeout(()=>{
+
+                success.textContent="";
+
+            },5000);
+
+
+        }
+
+
+    });
+
+
+}
+
