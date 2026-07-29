@@ -8,9 +8,7 @@
     <title>AfriConnect Summit 2026</title>
 
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet"
@@ -21,6 +19,259 @@
 </head>
 
 <body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                AfriConnect Summit 2026
+            </a>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+
+            </ul>
+
+            <div class="nav-actions">
+
+                <button id="theme-toggle" class="theme-btn">
+                    <i class="bi bi-moon-stars"></i>
+                </button>
+
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="page-hero">
+
+            <div class="container">
+
+
+                <h1>Inscription & Contact</h1>
+
+                <p>
+                    Rejoignez AfriConnect Summit 2026 et faites partie
+                    de l’innovation africaine.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ================= FORMULAIRE ================= -->
+
+        <section class="section-padding">
+
+            <div class="container form-container">
+
+                <!-- FORM -->
+                <form id="contactForm">
+
+                    <div class="form-grid">
+
+                        <div class="form-left">
+
+                            <div class="form-group">
+
+                                <label>Nom complet</label>
+
+                                <input type="text" id="name" required>
+
+                                <small class="error"></small>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>Email</label>
+
+                                <input type="email" id="email" required>
+
+                                <small class="error"></small>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>Téléphone</label>
+
+                                <input type="tel" id="phone" required>
+
+                                <small class="error"></small>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>Type de participation</label>
+
+                                <select id="type">
+
+                                    <option>Participant</option>
+                                    <option>Intervenant</option>
+                                    <option>Startup</option>
+                                    <option>Investisseur</option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>Pays</label>
+
+                                <select id="country">
+
+                                    <option>Sénégal</option>
+                                    <option>Ghana</option>
+                                    <option>Nigeria</option>
+                                    <option>Kenya</option>
+                                    <option>Côte d'Ivoire</option>
+                                    <option>RDC</option>
+                                    <option>Maroc</option>
+                                    <option>Tunisie</option>
+                                    <option>Algérie</option>
+                                    <option>Afrique du Sud</option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>Message</label>
+
+                                <textarea id="message" rows="5"></textarea>
+
+                                <small class="error"></small>
+
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+                                Envoyer
+                            </button>
+
+                            <p id="successMsg"></p>
+
+                        </div>
+
+                        <!-- INFO -->
+                        <div class="form-right">
+
+                            <h3>Informations</h3>
+
+                            <p><i class="bi bi-geo-alt"></i> Dakar, Sénégal</p>
+
+                            <p><i class="bi bi-envelope"></i> contact@africonnect.com</p>
+
+                            <p><i class="bi bi-telephone"></i> +221 77 000 00 00</p>
+
+                            <hr>
+
+                            <h3>Horaires</h3>
+
+                            <p>Lundi - Vendredi : 9h - 18h</p>
+
+                            <p>Samedi : 10h - 14h</p>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- ================= FAQ (CSS ONLY) ================= -->
+
+        <section class="section-padding faq">
+
+            <div class="container">
+
+                <h2>FAQ</h2>
+
+                <div class="faq-item">
+
+                    <input type="checkbox" id="q1">
+                    <label for="q1">Comment s’inscrire ?</label>
+                    <div class="faq-content">
+                        Remplissez simplement le formulaire ci-dessus.
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <input type="checkbox" id="q2">
+                    <label for="q2">L’événement est-il payant ?</label>
+                    <div class="faq-content">
+                        Certaines sessions sont gratuites, d’autres payantes.
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <input type="checkbox" id="q3">
+                    <label for="q3">Où se déroule l’événement ?</label>
+                    <div class="faq-content">
+                        À Dakar, Sénégal.
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <input type="checkbox" id="q4">
+                    <label for="q4">Puis-je devenir intervenant ?</label>
+                    <div class="faq-content">
+                        Oui, via la candidature dans le formulaire.
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <input type="checkbox" id="q5">
+                    <label for="q5">Y a-t-il un replay ?</label>
+                    <div class="faq-content">
+                        Oui, les sessions seront disponibles en ligne.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= MAP ================= -->
+
+       
+
+   
+
+    <!-- ================= JS ================= -->
 
     <script src="js/script.js"></script>
 
